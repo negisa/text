@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+/* 对于全局属性进行设定 */
+ul{
+    list-style: none;
+}
+/*去除ul标签带的小圆点*/
+a{
+    color: #333;
+    text-decoration: none;
+}
+/*去掉a标签的下划线更改字体颜色*/
+body{
+    background: #f4f4f4; 
+}
+.header{
+    height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    border-bottom: 1px solid #f4f0f0e3;/*导航栏的下边框*/
+}
+/* 对于主页的上端进行设定 */
+.nav-box{
+    max-width: 1200px;
+    margin: 0 auto;     /*水平方向上居中显示*/
+    display: flex;
+    height: 40px;
+    padding-top: 20px;
+    align-items: center;  /*元素垂直居中，左右分布*/
+    justify-content: space-between;
+    font-size: 30px;
+    color: #333;
+}
+.nav-box .nav {
+    display: flex;
+    font-size: 16px;
+    color: #555;
+}
+/*使子元素水平排列,更改菜单项的字体*/
+.nav-box .nav li{
+    padding-left: 40px; /*菜单项之间的间距*/
+
+}
+.nav-box .nav a.on,
+.nav-box .nav a:hover{  /*鼠标移入时候，显示下划线*/
+    color: #000;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #333;
+}
+.banner{
+    width: 100%;
+    margin: 0 auto;
+    background: url(../images/mio.jpg) no-repeat center;
+    height: 700px;
+    text-align: center;
+    line-height: 312px;
+    color: #fff;
+    font-size: 90px;
+    font-weight: bold;
+    text-shadow: 0 0 10 rgba(0, 0, 0, 0.3);
+}
+.introduce{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;/*上下边距*/
+}
+.introduce-tit{
+    line-height: 50px;
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    color: #555;
+}
+.introduce-main{
+    display: flex;
+}
+.introduce-main .l {
+    margin-right: 60px;
+}
+.introduce .l img{
+    border-radius: 50%;
+}
+.introduce-main .r{
+    line-height: 50px;
+    font-size: 18px;
+    color: #555;
+}
+.mainbox{
+    width: 1000px;
+    margin: 20px auto;
+}
+.flexbox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.block{
+    width: 7000px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.desc{
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+    transition: opacity 0.5s ease-in  ;
+
+}
+.block:hover .desc{
+    opacity: 1;
+}
+.block .pic{
+    transition: all 0.3s ease-in;
+}
+.block:hover img{
+    transform: scale(1.2);/*移入时候放大*/
+}
+
+
