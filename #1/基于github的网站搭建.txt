@@ -1,2 +1,2 @@
 网址：https://negisa.github.io/
-github源代码：https://github.com/negisa/negisa.github.io
+github源代码：https://github.com/negisa/text
